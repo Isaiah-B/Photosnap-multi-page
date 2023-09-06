@@ -4,11 +4,17 @@ import StoryCard from "../../components/story-card/story-card.component";
 
 import storiesList from '../../../data';
 
-import { StoriesHero, StoriesHeroAuthor, StoriesHeroContent } from "./stories.styles";
+import {
+  StoriesHero,
+  StoriesHeroAuthor,
+  StoriesHeroContent,
+  StoriesMobileImage,
+} from "./stories.styles";
 
 export default function StoriesPage() {
   return (
     <main>
+      <StoriesMobileImage />
       <StoriesHero>
         <StoriesHeroContent>
           <h4>Last month's featured story</h4>

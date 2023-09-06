@@ -1,6 +1,12 @@
 import { Button } from '../../cta/cta.component';
 
-import { PricingCardLarge, PricingCardSmall } from './pricing-card.styles';
+import {
+  PricingCardButton,
+  PricingCardHead,
+  PricingCardLarge,
+  PricingCardPrice,
+  PricingCardSmall,
+} from './pricing-card.styles';
 
 interface PricingCardProps { 
   title: string,
@@ -32,12 +38,12 @@ export default function PricingCard({
   
   return (
     <SelectedComponent>
-      <div>
+      <PricingCardHead>
         <h2>{title}</h2>
         <p>{description}</p>
-      </div>
+      </PricingCardHead>
 
-      <div>
+      <PricingCardPrice>
         <h1>{`$${selectedPrice.toFixed(2)}`}</h1>
         <p>
           {
@@ -46,13 +52,15 @@ export default function PricingCard({
               : 'per year'
           }
         </p>
-      </div>
+      </PricingCardPrice>
       
-      {
-        cardSize === 'small'
-          ? <Button buttonType='dark'>Pick Plan</Button>
-          : <Button buttonType='light'>Pick Plan</Button>
-      }
+      <PricingCardButton>      
+        {
+          cardSize === 'small'
+            ? <Button buttonType='dark'>Pick Plan</Button>
+            : <Button buttonType='light'>Pick Plan</Button>
+        }
+      </PricingCardButton>
     </SelectedComponent>
   );
 }

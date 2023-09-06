@@ -1,20 +1,20 @@
 import { AppLink } from '../cta/cta.component';
 
-import { ReactComponent as FacebookIcon } from '../../assets/shared/facebook.svg';
-import { ReactComponent as YoutubeIcon } from '../../assets/shared/youtube.svg';
-import { ReactComponent as TwitterIcon } from '../../assets/shared/twitter.svg';
-import { ReactComponent as PintrestIcon } from '../../assets/shared/pinterest.svg';
-import { ReactComponent as InstagramIcon } from '../../assets/shared/instagram.svg';
+import { ReactComponent as FacebookIcon } from '../../../assets/shared/desktop/facebook.svg';
+import { ReactComponent as YoutubeIcon } from '../../../assets/shared/desktop/youtube.svg';
+import { ReactComponent as TwitterIcon } from '../../../assets/shared/desktop/twitter.svg';
+import { ReactComponent as PintrestIcon } from '../../../assets/shared/desktop/pinterest.svg';
+import { ReactComponent as InstagramIcon } from '../../../assets/shared/desktop/instagram.svg';
 
 import {
+  FooterAppLinkWrapper,
   FooterContainer,
   FooterContent,
-  FooterEnd,
+  FooterCopyright,
   FooterLink,
   FooterLogo,
   FooterNav,
   FooterSocialsList,
-  FooterStart,
 } from './footer.styles';
 
 export default function Footer() {
@@ -23,19 +23,16 @@ export default function Footer() {
   return (
     <FooterContainer>
       <FooterContent>
+        <FooterLogo />
 
-        <FooterStart>
-          <FooterLogo />
-
-          <FooterSocialsList>
-            <FacebookIcon />
-            <YoutubeIcon />
-            <TwitterIcon />
-            <PintrestIcon />
-            <InstagramIcon />
-          </FooterSocialsList>
-        </FooterStart>
-
+        <FooterSocialsList>
+          <FacebookIcon />
+          <YoutubeIcon />
+          <TwitterIcon />
+          <PintrestIcon />
+          <InstagramIcon />
+        </FooterSocialsList>
+        
         <FooterNav>
           <FooterLink to={'/'}>Home</FooterLink>
           <FooterLink to={'/stories'}>Stories</FooterLink>
@@ -43,13 +40,13 @@ export default function Footer() {
           <FooterLink to={'/pricing'}>Pricing</FooterLink>
         </FooterNav>
 
-        <FooterEnd>
+        <FooterAppLinkWrapper>
           <AppLink linkType='link-dark' to='#'>
               Get an invite
           </AppLink>
+        </FooterAppLinkWrapper>
 
-          <p>Copyright {currentYear}. All Rights Reserved</p>
-        </FooterEnd>
+        <FooterCopyright>Copyright {currentYear}. All Rights Reserved</FooterCopyright>
 
       </FooterContent>
     </FooterContainer>

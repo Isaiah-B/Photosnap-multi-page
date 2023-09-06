@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { ButtonBase, LinkBase } from '../cta/cta.styles';
+import MEDIA_SIZES from '../../constants';
 
 export const StoryCardLinkWrapper = styled.a`
   text-decoration: none;
@@ -12,7 +14,6 @@ export const StoryCardContainer = styled.div<{ $imgsrc: string }>`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  flex-grow: 1;
 
   position: relative;
   width: 100%;
@@ -25,8 +26,10 @@ export const StoryCardContainer = styled.div<{ $imgsrc: string }>`
     linear-gradient(var(--image-gradient)),
     ${({ $imgsrc }) => `url(${$imgsrc})`};
 
+  background-size: cover;
   background-repeat: no-repeat;
-
+  background-position-x: center;
+  
   &::after {
     content: "";
     position: absolute;
@@ -47,10 +50,15 @@ export const StoryCardContainer = styled.div<{ $imgsrc: string }>`
       display: block;
     }
   }
+
+  @media ${MEDIA_SIZES.width_576} {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
 `;
 
 export const StoryCardContent = styled.div`
-  padding: 4rem 4rem 2.8rem;
+  padding: 4rem;
 
   h3 {
     margin-bottom: 0.4rem;
@@ -65,6 +73,23 @@ export const StoryCardContent = styled.div`
     width: 100%;
     opacity: 0.25;
     margin-top: 1.6rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  @media ${MEDIA_SIZES.width_416} {
+    padding: 4rem 3.3rem;
+  }
+`;
+
+export const StoryCardReadStory = styled.div`
+  ${ButtonBase};
+  ${LinkBase};
+
+  justify-content: space-between;
+
+  color: white;
+
+  svg path {
+    stroke: white;
   }
 `;

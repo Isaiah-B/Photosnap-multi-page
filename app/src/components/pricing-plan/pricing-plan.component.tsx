@@ -47,9 +47,9 @@ export default function PricingPlan() {
           />
 
           <PricingCard
-            title='Basic'
-            description='Includes basic usage of our platform. Recommended 
-              for new and aspiring photographers.'
+            title='Pro'
+            description='More advanced features available. Recommended for 
+              photography veterans and professionals.'
             priceMonth={39}
             priceYear={390}
             frequency={pricingTime}
@@ -57,9 +57,9 @@ export default function PricingPlan() {
           />
 
           <PricingCard
-            title='Basic'
-            description='Includes basic usage of our platform. Recommended 
-              for new and aspiring photographers.'
+            title='Business'
+            description='Additional features available such as more detailed 
+              metrics. Recommended for business owners.'
             priceMonth={99}
             priceYear={990}
             frequency={pricingTime}

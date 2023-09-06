@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { Link } from 'react-router-dom';
 
-const ButtonBase = css`
+export const ButtonBase = css`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,10 +19,11 @@ const ButtonBase = css`
   padding: 1.2rem 2.4rem;
 `;
 
-const LinkBase = css`
+export const LinkBase = css`
+  justify-content: start;
   gap: 1.6rem;
   
-  padding: 1.2rem 0rem;
+  padding: 0;
   text-decoration: none;
   
   background: transparent;

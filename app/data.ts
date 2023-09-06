@@ -3,7 +3,6 @@ type StoryItem = {
   author: string,
   images: {
     desktop: string,
-    tablet: string,
     mobile: string,
   }
 }
@@ -14,8 +13,7 @@ const storiesList: StoryItem[] = [
     author: 'John Appleseed',
     images: {
       desktop: '../../../assets/stories/desktop/mountains.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/mountains.jpg',
     }
   },
   {
@@ -23,8 +21,7 @@ const storiesList: StoryItem[] = [
     author: 'Benjamin Cruz',
     images: {
       desktop: '../../../assets/stories/desktop/cityscapes.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/cityscapes.jpg',
     }
   },
   {
@@ -32,8 +29,7 @@ const storiesList: StoryItem[] = [
     author: 'Alexei Borodin',
     images: {
       desktop: '../../../assets/stories/desktop/18-days-voyage.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/18-days-voyage.jpg',
     }
   },
   {
@@ -41,8 +37,7 @@ const storiesList: StoryItem[] = [
     author: 'Samantha Brooke',
     images: {
       desktop: '../../../assets/stories/desktop/architecturals.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/architecturals.jpg',
     }
   },
   {
@@ -50,8 +45,7 @@ const storiesList: StoryItem[] = [
     author: 'Timothy Wagner',
     images: {
       desktop: '../../../assets/stories/desktop/world-tour.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/world-tour.jpg',
     }
   },
   {
@@ -59,8 +53,7 @@ const storiesList: StoryItem[] = [
     author: 'William Malcolm',
     images: {
       desktop: '../../../assets/stories/desktop/unforeseen-corners.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/unforeseen-corners.jpg',
     }
   },
   {
@@ -68,8 +61,7 @@ const storiesList: StoryItem[] = [
     author: 'Tim Hillenburg',
     images: {
       desktop: '../../../assets/stories/desktop/king-on-africa.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/king-on-africa.jpg',
     }
   },
   {
@@ -77,8 +69,7 @@ const storiesList: StoryItem[] = [
     author: 'Felicia Rourke',
     images: {
       desktop: '../../../assets/stories/desktop/trip-to-nowhere.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/trip-to-nowhere.jpg',
     }
   },
   {
@@ -86,8 +77,7 @@ const storiesList: StoryItem[] = [
     author: 'Mohammed Abdul',
     images: {
       desktop: '../../../assets/stories/desktop/rage-of-the-sea.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/rage-of-the-sea.jpg',
     }
   },
   {
@@ -95,8 +85,7 @@ const storiesList: StoryItem[] = [
     author: 'Michelle',
     images: {
       desktop: '../../../assets/stories/desktop/running-free.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/running-free.jpg',
     }
   },
   {
@@ -104,8 +93,7 @@ const storiesList: StoryItem[] = [
     author: 'Lamarr Wilson',
     images: {
       desktop: '../../../assets/stories/desktop/behind-the-waves.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/behind-the-waves.jpg',
     }
   },
   {
@@ -113,8 +101,7 @@ const storiesList: StoryItem[] = [
     author: 'Samantha Brooke',
     images: {
       desktop: '../../../assets/stories/desktop/calm-waters.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/calm-waters.jpg',
     }
   },
   {
@@ -122,8 +109,7 @@ const storiesList: StoryItem[] = [
     author: 'Benjamin Cruz',
     images: {
       desktop: '../../../assets/stories/desktop/milky-way.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/milky-way.jpg',
     }
   },
   {
@@ -131,8 +117,7 @@ const storiesList: StoryItem[] = [
     author: 'Mohammed Abdul',
     images: {
       desktop: '../../../assets/stories/desktop/dark-forest.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/dark-forest.jpg',
     }
   },
   {
@@ -140,8 +125,7 @@ const storiesList: StoryItem[] = [
     author: 'Michelle',
     images: {
       desktop: '../../../assets/stories/desktop/somwarpet.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/somwarpet.jpg',
     }
   },
   {
@@ -149,8 +133,7 @@ const storiesList: StoryItem[] = [
     author: 'William Malcolm',
     images: {
       desktop: '../../../assets/stories/desktop/land-of-dreams.jpg',
-      tablet: '',
-      mobile: '',
+      mobile: '../../../assets/stories/mobile/land-of-dreams.jpg',
     }
   },
 ]

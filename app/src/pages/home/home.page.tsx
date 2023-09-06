@@ -4,17 +4,16 @@ import Feature from '../../components/feature/feature.component';
 import StoriesGrid from '../../components/stories-grid/stories-grid.component';
 import FeatureGrid from '../../components/feature-grid/feature-grid.component';
 
-import storyList from '../../../data';
-
 import { ReactComponent as ResponsiveIcon } from '../../../assets/features/desktop/responsive.svg';
 import { ReactComponent as NoLimitIcon } from '../../../assets/features/desktop/no-limit.svg';
 import { ReactComponent as EmbedIcon } from '../../../assets/features/desktop/embed.svg';
 
-import { HomePageContainer } from './home.styles';
+import storyList from '../../../data';
+
 
 export default function HomePage() {
   return (
-    <HomePageContainer>
+    <main>
       <Row2
         title='Create and share your photo stories.'
         description='Photosnap is a platform for photographers and visual storytellers. 
@@ -23,8 +22,8 @@ export default function HomePage() {
         theme='dark'
         images={{
           desktop: '../../../assets/home/desktop/create-and-share.jpg',
-          tablet: '',
-          mobile: '',
+          tablet: '../../../assets/home/tablet/create-and-share.jpg',
+          mobile: '../../../assets/home/mobile/create-and-share.jpg',
         }}
         accent
       />
@@ -37,8 +36,8 @@ export default function HomePage() {
         theme='light'
         images={{
           desktop: '../../../assets/home/desktop/beautiful-stories.jpg',
-          tablet: '',
-          mobile: '',
+          tablet: '../../../assets/home/tablet/beautiful-stories.jpg',
+          mobile: '../../../assets/home/mobile/beautiful-stories.jpg',
         }}
         reversed
       />
@@ -51,8 +50,8 @@ export default function HomePage() {
         theme='light'
         images={{
           desktop: '../../../assets/home/desktop/designed-for-everyone.jpg',
-          tablet: '',
-          mobile: '',
+          tablet: '../../../assets/home/tablet/designed-for-everyone.jpg',
+          mobile: '../../../assets/home/mobile/designed-for-everyone.jpg',
         }}
       />
 
@@ -69,7 +68,7 @@ export default function HomePage() {
         }
       </StoriesGrid>
 
-      <FeatureGrid>
+      <FeatureGrid preview>
         <Feature
           Icon={ResponsiveIcon}
           title='100% Responsive'
@@ -91,6 +90,6 @@ export default function HomePage() {
             YouTube videos, Google Maps, and more. '
         />
       </FeatureGrid>
-    </HomePageContainer>
+    </main>
   );
 }

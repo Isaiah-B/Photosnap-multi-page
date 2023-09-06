@@ -1,4 +1,5 @@
 import { AppLink } from '../cta/cta.component';
+
 import { BannerContainer, BannerContent} from './banner.styles';
 
 export default function Banner() {

@@ -1,4 +1,4 @@
-import { ReactComponent as LinkArrow } from '../../assets/shared/arrow.svg';
+import { ReactComponent as LinkArrow } from '../../../assets/shared/desktop/arrow.svg';
 
 import { ButtonDark, ButtonLight, LinkDark, LinkLight } from './cta.styles';
 

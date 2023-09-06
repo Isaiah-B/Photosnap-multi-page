@@ -1,6 +1,12 @@
 import { AppLink } from '../cta/cta.component';
 
-import { Row2Container, Row2ImageWrapper, Row2TextBox, Row2TextContent } from './row-2.styles';
+import {
+  Row2Container,
+  Row2ImageWrapper,
+  Row2TextBox,
+  Row2TextContent,
+  Row2TextContentWrapper,
+} from './row-2.styles';
 
 interface Row2Props {
   title: string,
@@ -42,21 +48,27 @@ export default function Row2({
   return (
     <Row2Container reversed={reversed}>
       <Row2TextBox theme={theme}>
-        <Row2TextContent className={accent ? 'accent' : ''}>
-          <h1>{title}</h1>
-          <p>{description}</p>
+        <Row2TextContentWrapper className={accent ? 'accent' : ''}>
+          <Row2TextContent>
+            <h1>{title}</h1>
+            <p>{description}</p>
 
-          {
-            linkText
-              ? <Row2Link theme={theme} linkText={linkText} />
-              : null
-          }
-          
-        </Row2TextContent>
+            {
+              linkText
+                ? <Row2Link theme={theme} linkText={linkText} />
+                : null
+            }
+            
+          </Row2TextContent>
+        </Row2TextContentWrapper>
       </Row2TextBox>
 
       <Row2ImageWrapper>
-        <img src={images.desktop} alt="" />
+        <picture>
+          <source media='(max-width: 656px)' srcSet={images.mobile} />
+          <source media='(max-width: 872px)' srcSet={images.tablet} />
+          <img src={images.desktop} alt="" />
+        </picture>
       </Row2ImageWrapper>
     </Row2Container>
   );

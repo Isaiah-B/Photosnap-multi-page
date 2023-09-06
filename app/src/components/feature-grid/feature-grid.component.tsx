@@ -1,9 +1,12 @@
-import { ReactNode } from 'react';
 import { FeatureGridContainer } from './feature-grid.styles';
 
-export default function FeatureGrid({ children }: { children: ReactNode }) {
+interface FeatureGridProps {
+  preview?: boolean,
+  children: React.ReactNode,
+}
+export default function FeatureGrid({ preview=false, children }: FeatureGridProps) {
   return (
-    <FeatureGridContainer>
+    <FeatureGridContainer className={preview ? 'preview' : ''}>
       {children}
     </FeatureGridContainer>
   );

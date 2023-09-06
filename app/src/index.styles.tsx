@@ -1,18 +1,20 @@
 import { createGlobalStyle, css } from "styled-components";
-
-export const MEDIA_SIZES = {
-  width_1440: '(max-width: 90em)',
-};
+import MEDIA_SIZES from "./constants";
 
 export const GlobalStyle = createGlobalStyle`
   :root {
     --container-width: 110rem;
     --light-grey: hsl(0, 0%, 87%);
-    --image-gradient: hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.66);
+    --image-gradient: 180deg, rgba(0, 0, 0, 0.00) 0.27%, rgba(0, 0, 0, 0.66) 100%;
+;
     --main-accent: 
     27deg, hsl(28, 100%, 79%) 0%,
       hsl(329, 36%, 59%) 43.29%, 
       hsl(229, 100%, 68%) 83.33%;
+
+    @media ${MEDIA_SIZES.width_1200} {
+      --container-width: 93.2%
+    }
   }
   
   * {
@@ -35,11 +37,21 @@ export const GlobalStyle = createGlobalStyle`
     background-color: white;
   }
 
+  main { 
+    width: 100%;
+  }
+
   h1 {
     font-size: 4rem;
     line-height: 4.8rem;
     letter-spacing: 4.2px;
     text-transform: uppercase;
+
+    @media ${MEDIA_SIZES.width_768} {
+      font-size: 3.2rem;
+      letter-spacing: 3.3px;
+      line-height: 4rem;
+    }
   }
 
   h2 {

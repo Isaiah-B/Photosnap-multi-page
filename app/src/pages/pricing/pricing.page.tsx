@@ -11,8 +11,8 @@ export default function PricingPage() {
           visual storytellers. It’s the simple way to create and share your photos."
         images={{
           desktop: "../../../assets/pricing/desktop/hero.jpg",
-          tablet: '',
-          mobile: '',
+          tablet: '../../../assets/pricing/tablet/hero.jpg',
+          mobile: '../../../assets/pricing/mobile/hero.jpg',
         }}
         theme="dark"
         accent
