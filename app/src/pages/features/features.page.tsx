@@ -3,12 +3,12 @@ import Feature from "../../components/feature/feature.component";
 import Row2 from "../../components/row-2/row-2.component";
 import Banner from "../../components/banner/banner.component";
 
-import { ReactComponent as ResponsiveIcon} from "../../../assets/features/desktop/responsive.svg";
-import { ReactComponent as NoLimitIcon} from "../../../assets/features/desktop/no-limit.svg";
-import { ReactComponent as EmbedIcon} from "../../../assets/features/desktop/embed.svg";
-import { ReactComponent as CustomDomainIcon} from "../../../assets/features/desktop/custom-domain.svg";
-import { ReactComponent as ExposureIcon} from "../../../assets/features/desktop/boost-exposure.svg";
-import { ReactComponent as DragDropIcon} from "../../../assets/features/desktop/drag-drop.svg";
+import { ReactComponent as ResponsiveIcon} from "../../assets/features/desktop/responsive.svg";
+import { ReactComponent as NoLimitIcon} from "../../assets/features/desktop/no-limit.svg";
+import { ReactComponent as EmbedIcon} from "../../assets/features/desktop/embed.svg";
+import { ReactComponent as CustomDomainIcon} from "../../assets/features/desktop/custom-domain.svg";
+import { ReactComponent as ExposureIcon} from "../../assets/features/desktop/boost-exposure.svg";
+import { ReactComponent as DragDropIcon} from "../../assets/features/desktop/drag-drop.svg";
 
 export default function FeaturesPage() {
   return (

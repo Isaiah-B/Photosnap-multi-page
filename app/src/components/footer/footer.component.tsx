@@ -1,10 +1,10 @@
 import { AppLink } from '../cta/cta.component';
 
-import { ReactComponent as FacebookIcon } from '../../../assets/shared/desktop/facebook.svg';
-import { ReactComponent as YoutubeIcon } from '../../../assets/shared/desktop/youtube.svg';
-import { ReactComponent as TwitterIcon } from '../../../assets/shared/desktop/twitter.svg';
-import { ReactComponent as PintrestIcon } from '../../../assets/shared/desktop/pinterest.svg';
-import { ReactComponent as InstagramIcon } from '../../../assets/shared/desktop/instagram.svg';
+import { ReactComponent as FacebookIcon } from '../../assets/shared/desktop/facebook.svg';
+import { ReactComponent as YoutubeIcon } from '../../assets/shared/desktop/youtube.svg';
+import { ReactComponent as TwitterIcon } from '../../assets/shared/desktop/twitter.svg';
+import { ReactComponent as PintrestIcon } from '../../assets/shared/desktop/pinterest.svg';
+import { ReactComponent as InstagramIcon } from '../../assets/shared/desktop/instagram.svg';
 
 import {
   FooterAppLinkWrapper,

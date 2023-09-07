@@ -1,4 +1,4 @@
-import { ReactComponent as LinkArrow } from '../../../assets/shared/desktop/arrow.svg';
+import { ReactComponent as LinkArrow } from '../../assets/shared/desktop/arrow.svg';
 
 import useScreenWidth from '../../hooks/useScreenWidth';
 

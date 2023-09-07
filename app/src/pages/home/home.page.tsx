@@ -4,9 +4,9 @@ import Feature from '../../components/feature/feature.component';
 import StoriesGrid from '../../components/stories-grid/stories-grid.component';
 import FeatureGrid from '../../components/feature-grid/feature-grid.component';
 
-import { ReactComponent as ResponsiveIcon } from '../../../assets/features/desktop/responsive.svg';
-import { ReactComponent as NoLimitIcon } from '../../../assets/features/desktop/no-limit.svg';
-import { ReactComponent as EmbedIcon } from '../../../assets/features/desktop/embed.svg';
+import { ReactComponent as ResponsiveIcon } from '../../assets/features/desktop/responsive.svg';
+import { ReactComponent as NoLimitIcon } from '../../assets/features/desktop/no-limit.svg';
+import { ReactComponent as EmbedIcon } from '../../assets/features/desktop/embed.svg';
 
 import storyList from '../../../data';
 
@@ -21,9 +21,9 @@ export default function HomePage() {
         linkText='Get an invite'
         theme='dark'
         images={{
-          desktop: '../../../assets/home/desktop/create-and-share.jpg',
-          tablet: '../../../assets/home/tablet/create-and-share.jpg',
-          mobile: '../../../assets/home/mobile/create-and-share.jpg',
+          desktop: '/assets/home/desktop/create-and-share.jpg',
+          tablet: '/assets/home/tablet/create-and-share.jpg',
+          mobile: '/assets/home/mobile/create-and-share.jpg',
         }}
         accent
       />
@@ -35,9 +35,9 @@ export default function HomePage() {
         linkText='View the stories'
         theme='light'
         images={{
-          desktop: '../../../assets/home/desktop/beautiful-stories.jpg',
-          tablet: '../../../assets/home/tablet/beautiful-stories.jpg',
-          mobile: '../../../assets/home/mobile/beautiful-stories.jpg',
+          desktop: '/assets/home/desktop/beautiful-stories.jpg',
+          tablet: '/assets/home/tablet/beautiful-stories.jpg',
+          mobile: '/assets/home/mobile/beautiful-stories.jpg',
         }}
         reversed
       />
@@ -49,9 +49,9 @@ export default function HomePage() {
         linkText='View the stories'
         theme='light'
         images={{
-          desktop: '../../../assets/home/desktop/designed-for-everyone.jpg',
-          tablet: '../../../assets/home/tablet/designed-for-everyone.jpg',
-          mobile: '../../../assets/home/mobile/designed-for-everyone.jpg',
+          desktop: '/assets/home/desktop/designed-for-everyone.jpg',
+          tablet: '/assets/home/tablet/designed-for-everyone.jpg',
+          mobile: '/assets/home/mobile/designed-for-everyone.jpg',
         }}
       />
 

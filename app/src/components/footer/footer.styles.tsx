@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as Logo } from '../../../assets/shared/desktop/logo.svg';
+import { ReactComponent as Logo } from '../../assets/shared/desktop/logo.svg';
+
 import MEDIA_SIZES from '../../constants';
 
 import { NavLinkBase } from '../../index.styles';

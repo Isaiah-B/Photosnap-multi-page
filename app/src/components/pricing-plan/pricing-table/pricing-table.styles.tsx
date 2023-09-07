@@ -14,7 +14,7 @@ export const PricingTableContainer = styled.div`
   }
 `;
 
-export const PricingTableComponent = styled.tbody`
+export const PricingTableComponent = styled.table`
   display: table;
   width: 100%;
 
@@ -25,14 +25,17 @@ export const PricingTableComponent = styled.tbody`
   letter-spacing: 2px;
   text-transform: uppercase;
 
-  tr {
-    border-bottom: 1px solid var(--light-grey);
+  thead {
+    tr { border-bottom: 1px solid black; }
   }
-  tr:first-child { border-bottom: 1px solid black; }
+  
+  tbody {
+    tr { border-bottom: 1px solid var(--light-grey); }
+  }
   
   th, td {
     width: 19%;
-    padding: 2.3rem 0 1rem;
+    padding: 2.3rem 0;
     text-align: center;
 
     svg { vertical-align: middle; }
@@ -46,48 +49,55 @@ export const PricingTableComponent = styled.tbody`
   }
 
   @media ${MEDIA_SIZES.width_656} {
-    th:first-child {
-      padding: 0 0 2.3rem;
-    }
+    thead {
+      th:first-child { padding: 0 0 2.3rem; }
 
-    tr:first-child th:not(:first-child) {
-      display: none;
-    }
-
-    tr:not(:first-child) {
-      td:first-child {
+      tr:first-child th:not(:first-child) {
         display: none;
       }
-
-      td:not(:first-child) {
-        position: relative;
-        width: 33%;
-        text-align: start;
-        padding: 2.3rem 0;
-
-        &::before {
-          position: absolute;
-          transform: translateY(-1.8rem);
-
-          font-size: 1rem;
-          opacity: 0.5;
-        }
-
-        &:nth-child(2)::before {
-          content: "Basic";
-        }
-        &:nth-child(3)::before {
-          content: "Pro";
-        }
-        &:nth-child(4)::before {
-          content: "Business";
-        }
-      }
     }
+
   }
 `;
 
-export const MobileTableHead = styled.th`
+export const TableRow = styled.tr`
+  @media ${MEDIA_SIZES.width_656} {
+    display: flex;
+    
+    td:first-child {
+      display: none;
+    }
+
+    td:not(:first-child) {
+      position: relative;
+      width: 33%;
+      text-align: start;
+      padding: 2.3rem 0;
+
+      &::before {
+        position: absolute;
+        transform: translateY(-1.8rem);
+
+        font-size: 1rem;
+        opacity: 0.5;
+      }
+
+      &:nth-child(2)::before {
+        content: "Basic";
+      }
+      &:nth-child(3)::before {
+        content: "Pro";
+      }
+      &:nth-child(4)::before {
+        content: "Business";
+      }
+    }
+  
+  }
+`;
+
+
+export const MobileTableHead = styled.td`
   display: none;
   width: max-content !important;
   text-align: left !important;
@@ -96,4 +106,8 @@ export const MobileTableHead = styled.th`
   @media ${MEDIA_SIZES.width_656} {
     display: table-cell;
   }
+`;
+
+export const MobileSubheadRow = styled.tr`
+  border-bottom: none !important;
 `;

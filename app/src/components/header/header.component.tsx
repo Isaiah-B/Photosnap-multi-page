@@ -3,9 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { Button } from '../cta/cta.component';
 
-import { ReactComponent as Logo } from '../../../assets/shared/desktop/logo.svg';
-import { ReactComponent as HamburgurIcon } from '../../../assets/shared/mobile/menu.svg';
-import { ReactComponent as CloseIcon } from '../../../assets/shared/mobile/close.svg';
+import { ReactComponent as Logo } from '../../assets/shared/desktop/logo.svg';
+import { ReactComponent as HamburgurIcon } from '../../assets/shared/mobile/menu.svg';
+import { ReactComponent as CloseIcon } from '../../assets/shared/mobile/close.svg';
 
 import useScreenWidth from '../../hooks/useScreenWidth';
 
