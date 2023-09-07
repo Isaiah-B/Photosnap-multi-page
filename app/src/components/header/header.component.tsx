@@ -27,7 +27,7 @@ interface MobileHeaderProps {
 function MobileHeader({ menuOpen, handleMobileMenu }: MobileHeaderProps) {
   return (
     <MobileHeaderContent>
-      <Link to={'/'}>
+      <Link to={'/'} aria-label='home'>
         <Logo />
       </Link>
 
@@ -73,7 +73,7 @@ export default function Header() {
         {
           !isMobile
             ? (
-              <Link to={'/'}>
+              <Link to={'/'} aria-label='home'>
                 <Logo />
               </Link>
             )

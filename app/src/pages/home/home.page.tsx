@@ -25,6 +25,7 @@ export default function HomePage() {
           tablet: '/assets/home/tablet/create-and-share.jpg',
           mobile: '/assets/home/mobile/create-and-share.jpg',
         }}
+        alt='Man with camera standing on a pier'
         accent
       />
 
@@ -39,6 +40,7 @@ export default function HomePage() {
           tablet: '/assets/home/tablet/beautiful-stories.jpg',
           mobile: '/assets/home/mobile/beautiful-stories.jpg',
         }}
+        alt='Laptop with photo editing program'
         reversed
       />
 
@@ -53,6 +55,7 @@ export default function HomePage() {
           tablet: '/assets/home/tablet/designed-for-everyone.jpg',
           mobile: '/assets/home/mobile/designed-for-everyone.jpg',
         }}
+        alt='Man using high-end camera'
       />
 
       <StoriesGrid>

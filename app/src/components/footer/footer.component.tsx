@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { AppLink } from '../cta/cta.component';
 
 import { ReactComponent as FacebookIcon } from '../../assets/shared/desktop/facebook.svg';
@@ -26,11 +28,11 @@ export default function Footer() {
         <FooterLogo />
 
         <FooterSocialsList>
-          <FacebookIcon />
-          <YoutubeIcon />
-          <TwitterIcon />
-          <PintrestIcon />
-          <InstagramIcon />
+          <Link to={'#'} aria-label='facebook'><FacebookIcon /></Link>
+          <Link to={'#'} aria-label='youtube'><YoutubeIcon /></Link>
+          <Link to={'#'} aria-label='twitter'><TwitterIcon /></Link>
+          <Link to={'#'} aria-label='pintrest'><PintrestIcon /></Link>
+          <Link to={'#'} aria-label='instagram'><InstagramIcon /></Link>
         </FooterSocialsList>
         
         <FooterNav>

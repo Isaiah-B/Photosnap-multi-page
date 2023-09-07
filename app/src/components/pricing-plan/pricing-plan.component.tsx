@@ -29,6 +29,7 @@ export default function PricingPlan() {
           <PricingTimeSwitchButton
             className={pricingTime}
             onClick={() => handleChangePricingTime()}
+            aria-label={`Switch to ${pricingTime === 'monthly' ? 'yearly' : 'monthly'}`}
           />
           <h3 className={pricingTime === 'yearly' ? 'selected' : ''}>
             Yearly

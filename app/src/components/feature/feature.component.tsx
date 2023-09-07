@@ -10,7 +10,7 @@ export default function Feature({ Icon, title, description }: FeatureProps) {
   return (
     <FeatureContainer>
       <IconWrapper>
-        <Icon />
+        <Icon aria-hidden />
       </IconWrapper>
 
       <h3>{title}</h3>

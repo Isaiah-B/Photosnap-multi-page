@@ -53,9 +53,8 @@ export const FooterSocialsList = styled.div`
   grid-row: 3;
   align-self: flex-end;
 
-  svg {
-    cursor: pointer;
 
+  a {
     &:not(:hover) path {
       fill: white;
     }

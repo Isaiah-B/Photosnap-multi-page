@@ -17,6 +17,7 @@ interface Row2Props {
     tablet: string,
     mobile: string,
   },
+  alt?: string,
   theme?: 'light' | 'dark',
   reversed?: boolean,
   accent?: boolean,
@@ -41,6 +42,7 @@ export default function Row2({
   description,
   linkText=null,
   images,
+  alt='',
   theme='light',
   reversed=false,
   accent=false,
@@ -67,7 +69,7 @@ export default function Row2({
         <picture>
           <source media='(max-width: 656px)' srcSet={images.mobile} />
           <source media='(max-width: 872px)' srcSet={images.tablet} />
-          <img src={images.desktop} alt="" />
+          <img src={images.desktop} alt={alt} />
         </picture>
       </Row2ImageWrapper>
     </Row2Container>
